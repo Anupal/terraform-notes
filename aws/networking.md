@@ -123,6 +123,8 @@ resource "aws_route_table_association" "subnet_rtb_assoc" {
 
 ## Network Interface
 ### Create
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface
+
 ```terraform
 resource "aws_network_interface" "some_nic" {
     subnet_id       = aws_subnet.some_subnet.id
@@ -136,6 +138,8 @@ resource "aws_network_interface" "some_nic" {
 ```
 
 ### Create and attach
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface
+
 ```terraform
 resource "aws_network_interface" "some_other_nic" {
     subnet_id       = aws_subnet.some_subnet.id
